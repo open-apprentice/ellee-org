@@ -10,8 +10,6 @@ import {
   BookOpenCheck,
 } from 'lucide-react';
 
-import Image from 'next/image';
-
 export const useCases = [
   {
     title: 'Teach a Course',
@@ -50,7 +48,7 @@ export const useCases = [
 
 export const elleeLMS = [
   {
-    title: 'Knowledge Reused',
+    title: 'Knowledge Remembered',
     href: '/ellee-lms/knowledge-reused',
     description:
       "Allows to document knowledge once; then share everywhere to any other teacher. Teach only the part you're expert at.",

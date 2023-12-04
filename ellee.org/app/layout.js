@@ -5,6 +5,7 @@ import { cn } from '../lib/utils';
 
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'Ellee.org | A modern LMS for the blockchain age',
@@ -34,6 +35,8 @@ export default function RootLayout({ children }) {
           <Header />
 
           {children}
+
+          <Footer />
         </ThemeProvider>
         {children}
       </body>
