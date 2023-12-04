@@ -5,6 +5,7 @@ import { Logo } from './Logo';
 import { MobileMainMenu } from './menus/MobileMainMenu';
 import MainMenu from './menus/MainMenu';
 import { ModeToggle } from './ModeToggle';
+import { SocialMediaIcons } from '@/data/SocialIcons';
 
 export default function Header({ children, className }) {
   return (
@@ -22,10 +23,14 @@ export default function Header({ children, className }) {
           <MainMenu />
         </div>
         <div className={cn('hidden sm:block', className)}>
-          <ModeToggle />
+          <ul className={cn('flex gap-4 items-center', className)}>
+            <SocialMediaIcons />
+            <li>
+              <ModeToggle />
+            </li>
+          </ul>
         </div>
         <div className={cn('flex sm:hidden', className)}>
-          <ModeToggle />
           <MobileMainMenu />
         </div>
         {children}

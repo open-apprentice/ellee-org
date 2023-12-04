@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { useCases, elleeLMS } from '../../data/data';
 import { Logo } from '../Logo';
+import { SocialMediaIcons } from '@/data/SocialIcons';
+
 import ListItem from './ListItem';
 
 import { Button } from '../ui/button';
@@ -150,6 +152,9 @@ export function MobileMainMenu({ className }) {
                 <Link href='/get-started'>Get Started</Link>
               </Button>
             </li>
+          </ul>
+          <ul className={cn('flex gap-3 mt-8 mb-24', className)}>
+            <SocialMediaIcons />
           </ul>
         </ScrollArea>
       </SheetContent>
