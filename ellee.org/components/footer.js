@@ -107,10 +107,26 @@ export default function Footer({ className }) {
                 className
               )}
             >
-              CONTACT
+              CONTACT & ABOUT
             </h2>
 
             <ul>
+              <li
+                className={cn(
+                  'flex mb-3 text-xs md:text-sm md:mb-3',
+                  className
+                )}
+              >
+                <Link
+                  className={cn(
+                    'font-normal text-neutral-400 hover:underline',
+                    className
+                  )}
+                  href='/about-us'
+                >
+                  About us
+                </Link>
+              </li>
               <li
                 className={cn(
                   'flex mb-3 text-xs md:text-sm md:mb-3',
@@ -153,10 +169,10 @@ export default function Footer({ className }) {
           className={cn('mt-4 md:mt-0 text-neutral-400', className)}
         >
           <Link
-            href='/about-us'
+            href='/terms-of-use'
             className={cn('text-neutral-400 font-normal', className)}
           >
-            About
+            Terms of Use
           </Link>{' '}
           &{' '}
           <Link

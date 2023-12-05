@@ -8,7 +8,7 @@ export default function Home({ className }) {
         className
       )}
     >
-      <h1>Ellee Home</h1>
+      <h1>Privacy Policy</h1>
     </main>
   );
 }
