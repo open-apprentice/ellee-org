@@ -119,14 +119,14 @@ export default function Footer({ className }) {
               >
                 <ContactEmail />
               </li>
-              <li
-                className={cn(
-                  'flex gap-3 mt-8 text-neutral-400',
-                  className
-                )}
-              >
-                <SocialMediaIcons />
-              </li>
+            </ul>
+            <ul
+              className={cn(
+                'flex gap-4 items-center text-neutral-400',
+                className
+              )}
+            >
+              <SocialMediaIcons />
             </ul>
           </li>
         </ul>
