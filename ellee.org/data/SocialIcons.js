@@ -6,6 +6,7 @@ export const TwitterIcon = ({ className }) => {
       aria-label='Twitter'
       href='https://twitter.com/ellee_lms'
       target='_blank'
+      className={cn('p-4', className)}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -29,6 +30,7 @@ export const LinkedInIcon = ({ className }) => {
       aria-label='LinkedIn'
       href='https://www.linkedin.com/showcase/ellee-lms'
       target='_blank'
+      className={cn('p-4', className)}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -47,8 +49,12 @@ export const LinkedInIcon = ({ className }) => {
 export const SocialMediaIcons = ({ className }) => {
   return (
     <>
-      <TwitterIcon />
-      <LinkedInIcon />
+      <li>
+        <TwitterIcon />
+      </li>
+      <li>
+        <LinkedInIcon />
+      </li>
     </>
   );
 };
