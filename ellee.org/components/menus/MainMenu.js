@@ -4,7 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import ListItem from './ListItem';
 import { useCases, elleeLMS } from '@/data/data';
-import { ArrowBigRight } from 'lucide-react';
+import { GetStartedButton } from '@/components/HTMLTags';
 
 import { cn } from '@/lib/utils';
 
@@ -17,8 +17,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-
-import { Button } from '@/components/ui/button';
 
 export default function MainMenu({ className }) {
   return (
@@ -120,11 +118,7 @@ export default function MainMenu({ className }) {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Button asChild>
-            <Link href='/get-started'>
-              Get started <ArrowBigRight />
-            </Link>
-          </Button>
+          <GetStartedButton />
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

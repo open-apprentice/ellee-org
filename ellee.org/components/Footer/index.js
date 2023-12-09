@@ -2,16 +2,17 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-import { GreyFooterLogo } from '../Logo';
+import { GreyFooterLogo, ELogo } from '../Logo';
 import { useCases, elleeLMS } from '@/data/data';
 import ContactEmail from '@/data/ContactEmail';
 import { SocialMediaIcons } from '@/data/SocialIcons';
+import { ModeToggle } from '../ModeToggle';
 
 export default function Footer({ className }) {
   return (
     <footer
       className={cn(
-        'container pt-12 md:pt-20 md:pb-20  items-center mx-auto max-w-screen-xl md:px-12 md:py-8 ',
+        'container pt-12 md:pt-20 md:pb-20  items-center mx-auto max-w-screen-xl md:px-12 md:py-8 text-neutral-800 dark:text-neutral-400',
         className
       )}
     >
@@ -37,7 +38,7 @@ export default function Footer({ className }) {
           <li className={cn('mb-8 md:w-auto md:mb0')}>
             <h2
               className={cn(
-                'text-neutral-400 text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
+                'text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
                 className
               )}
             >
@@ -47,14 +48,14 @@ export default function Footer({ className }) {
               {useCases.map((useCase) => (
                 <li
                   className={cn(
-                    'flex mb-3 text-xs md:text-sm md:mb-3',
+                    'flex mb-3 text-xs md:text-sm md:mb-3 ',
                     className
                   )}
                   key={useCase.title}
                 >
                   <Link
                     className={cn(
-                      'font-normal text-neutral-400 hover:underline',
+                      'font-normal hover:underline',
                       className
                     )}
                     href={useCase.href}
@@ -70,7 +71,7 @@ export default function Footer({ className }) {
           <li className={cn('mb-8 md:w-auto md:mb0')}>
             <h2
               className={cn(
-                'text-neutral-400 text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
+                'text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
                 className
               )}
             >
@@ -87,7 +88,7 @@ export default function Footer({ className }) {
                 >
                   <Link
                     className={cn(
-                      'font-normal text-neutral-400 hover:underline',
+                      'font-normal hover:underline',
                       className
                     )}
                     href={elleeLMSlink.href}
@@ -99,11 +100,11 @@ export default function Footer({ className }) {
             </ul>
           </li>
 
-          {/* CONTACT */}
+          {/* CONTACT & ABOUT */}
           <li className={cn('mb-8 md:w-auto md:mb0')}>
             <h2
               className={cn(
-                'text-neutral-400 text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
+                'text-xs sm:text-sm font-medium mb-4 md:mb-6 uppercase tracking-widest',
                 className
               )}
             >
@@ -113,13 +114,13 @@ export default function Footer({ className }) {
             <ul>
               <li
                 className={cn(
-                  'flex mb-3 text-xs md:text-sm md:mb-3',
+                  'flex mb-3 text-xs md:text-sm md:mb-3 ',
                   className
                 )}
               >
                 <Link
                   className={cn(
-                    'font-normal text-neutral-400 hover:underline',
+                    'font-normal  hover:underline',
                     className
                   )}
                   href='/about-us'
@@ -129,20 +130,23 @@ export default function Footer({ className }) {
               </li>
               <li
                 className={cn(
-                  'flex mb-3 text-xs md:text-sm md:mb-3',
+                  'flex mb-3 text-xs md:text-sm md:mb-3 ',
                   className
                 )}
               >
-                <ContactEmail />
+                <ContactEmail
+                  className={cn(
+                    'text-neutral-800 dark:text-neutral-400',
+                    className
+                  )}
+                />
               </li>
             </ul>
-            <ul
-              className={cn(
-                'flex gap-4 items-center text-neutral-400',
-                className
-              )}
-            >
+            <ul className={cn('flex gap-4 items-center', className)}>
               <SocialMediaIcons />
+              <li>
+                <ModeToggle />
+              </li>
             </ul>
           </li>
         </ul>
@@ -154,7 +158,7 @@ export default function Footer({ className }) {
           className
         )}
       >
-        <span className={cn('text-neutral-400', className)}>
+        <span>
           © 2023{' '}
           <a
             href='https://ellee.org'
@@ -165,19 +169,17 @@ export default function Footer({ className }) {
           </a>
           . All Rights Reserved.
         </span>
-        <span
-          className={cn('mt-4 md:mt-0 text-neutral-400', className)}
-        >
+        <span className={cn('mt-4 md:mt-0 ', className)}>
           <Link
             href='/terms-of-use'
-            className={cn('text-neutral-400 font-normal', className)}
+            className={cn('font-normal hover:underline', className)}
           >
             Terms of Use
           </Link>{' '}
           &{' '}
           <Link
             href='/privacy-policy'
-            className={cn('text-neutral-400 font-normal', className)}
+            className={cn(' font-normal hover:underline', className)}
           >
             Privacy Policy
           </Link>

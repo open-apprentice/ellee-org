@@ -5,13 +5,13 @@ import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
 import { H2, P, Section, Main } from '@/components/HTMLTags';
 
-// fix vercel error for Footer, copy and paste new Footer component
 // Hero Image
 // Gradients and spotlight
 // Button Design and special effects
-// Call to Action Design
+// Call to Action Design add image or background
 // Letter gradient
 // corner card gradients
+// social media icons hover effect
 
 // finish adding button
 // create radial gradient https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient

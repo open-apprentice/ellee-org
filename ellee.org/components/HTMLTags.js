@@ -96,7 +96,12 @@ export function Main({ children, className }) {
 
 export function DisplayText({ children, className }) {
   return (
-    <div className={cn('text-6xl font-semibold', className)}>
+    <div
+      className={cn(
+        'text-3xl md:text-5xl lg:text-6xl font-semibold',
+        className
+      )}
+    >
       {children}
     </div>
   );
@@ -106,7 +111,7 @@ export function SpanGradient({ children, className }) {
   return (
     <span
       className={cn(
-        'text-transparent bg-clip-text bg-gradient-to-r from-orange-800 to-blue-600',
+        'text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-blue-600',
         className
       )}
     >
@@ -117,9 +122,15 @@ export function SpanGradient({ children, className }) {
 
 export function GetStartedButton({ className }) {
   return (
-    <Button className={cn('', className)} asChild>
-      <Link href='/get-started'>
-        Get started <ArrowBigRight />
+    <Button asChild>
+      <Link className={cn('group', className)} href='/get-started'>
+        Get started{' '}
+        <ArrowBigRight
+          className={cn(
+            'z-40 ml-1 -mr-1  transition-all duration-300 group-hover:translate-x-1',
+            className
+          )}
+        />
       </Link>
     </Button>
   );

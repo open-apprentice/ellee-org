@@ -30,13 +30,13 @@ export const LinkedInIcon = ({ className }) => {
       aria-label='LinkedIn'
       href='https://www.linkedin.com/showcase/ellee-lms'
       target='_blank'
-      className={cn('p-4', className)}
+      className={cn('p-4 ', className)}
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         className={cn(
-          'w-5 h-5 duration-300 ease-in-out fill-current transition-color hover:text-white',
+          'w-5 h-5 duration-300 ease-in-out fill-current transition-color  hover:text-white ',
           className
         )}
       >
