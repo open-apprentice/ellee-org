@@ -13,6 +13,7 @@ import ListItem from './ListItem';
 import { Button } from '../ui/button';
 import { Separator } from '@/components/ui/separator';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { ArrowBigRight } from 'lucide-react';
 
 import {
   Sheet,
@@ -149,7 +150,9 @@ export function MobileMainMenu({ className }) {
             </li>
             <li>
               <Button className={cn('mt-4 mb-4', className)} asChild>
-                <Link href='/get-started'>Get Started</Link>
+                <Link href='/get-started'>
+                  Get started <ArrowBigRight />
+                </Link>
               </Button>
             </li>
           </ul>

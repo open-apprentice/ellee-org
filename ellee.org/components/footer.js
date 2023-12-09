@@ -29,7 +29,7 @@ export default function Footer({ className }) {
             )}
           >
             <div className={cn('mb-6 sm:mb-0', className)}>
-              <GreyFooterLogo width={180} />
+              <GreyFooterLogo width={180} height={'auto'} />
             </div>
           </li>
 

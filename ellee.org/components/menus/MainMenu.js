@@ -4,6 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import ListItem from './ListItem';
 import { useCases, elleeLMS } from '@/data/data';
+import { ArrowBigRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
 
@@ -120,7 +121,9 @@ export default function MainMenu({ className }) {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Button asChild>
-            <Link href='/get-started'>Get Started</Link>
+            <Link href='/get-started'>
+              Get started <ArrowBigRight />
+            </Link>
           </Button>
         </NavigationMenuItem>
       </NavigationMenuList>
