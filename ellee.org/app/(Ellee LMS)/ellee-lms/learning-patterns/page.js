@@ -5,12 +5,17 @@ import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
 import { H2, P, Section, Main } from '@/components/HTMLTags';
 
+// fix vercel error for Footer, copy and paste new Footer component
 // Hero Image
 // Gradients and spotlight
 // Button Design and special effects
 // Call to Action Design
 // Letter gradient
 // corner card gradients
+
+// finish adding button
+// create radial gradient https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
+// Craft the spotlight for the cards and other elements https://cruip.com/how-to-create-a-spotlight-card-hover-effect-with-tailwind-css/#create-a-reusable-spotlight-component-for-nextjs https://www.julienthibeaut.xyz/blog/create-modern-spotlight-effect-with-react-css
 
 export default function LearningPatternsPage({ className }) {
   return (

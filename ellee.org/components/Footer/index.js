@@ -2,7 +2,7 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-import { GreyFooterLogo } from './Logo';
+import { GreyFooterLogo } from '../Logo';
 import { useCases, elleeLMS } from '@/data/data';
 import ContactEmail from '@/data/ContactEmail';
 import { SocialMediaIcons } from '@/data/SocialIcons';
