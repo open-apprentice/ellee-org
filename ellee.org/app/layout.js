@@ -5,7 +5,7 @@ import { cn } from '../lib/utils';
 
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
-import Footer from '@/components/footer';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Ellee.org | A modern LMS for the blockchain age',

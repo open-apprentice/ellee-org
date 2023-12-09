@@ -9,6 +9,11 @@ export default function Home({ className }) {
       )}
     >
       <h1>Adaptive Content</h1>
+      <p>
+        My book is written for business professionals
+        <br /> In tech
+        <br /> In fintech <br /> In as Programmers
+      </p>
     </main>
   );
 }
