@@ -70,7 +70,7 @@ export const GreyFooterLogo = ({
     <Link href='/'>
       <Image
         priority
-        src={greyLogo}
+        src={darkSquareLogo}
         width={width}
         height={height}
         alt='Ellee LMS logo'

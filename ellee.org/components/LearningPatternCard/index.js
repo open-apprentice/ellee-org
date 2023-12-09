@@ -18,7 +18,7 @@ export default function LearningPatternCard(
   return (
     <Card
       className={cn(
-        'md:w-full xl:w-[350px] hover:bg-zinc-900',
+        'md:w-full xl:w-[350px] hover:bg-zinc-100 dark:hover:bg-zinc-900 ',
         className
       )}
     >

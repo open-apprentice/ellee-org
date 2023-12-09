@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils';
 import { useCases, elleeLMS } from '../../data/data';
 import { Logo } from '../Logo';
 import { SocialMediaIcons } from '@/data/SocialIcons';
+import { ModeToggle } from '@/components/ModeToggle';
+import { GetStartedButton } from '@/components/HTMLTags';
 
 import ListItem from './ListItem';
 
@@ -26,7 +28,8 @@ import { Menu as HamburgerIcon } from 'lucide-react';
 export function MobileMainMenu({ className }) {
   return (
     <Sheet>
-      <SheetTrigger asChild>
+      <ModeToggle />
+      <SheetTrigger className={cn('ml-2', className)} asChild>
         <Button variant='outline'>
           <HamburgerIcon />
           <span className={cn('sr-only', className)}>
@@ -149,11 +152,9 @@ export function MobileMainMenu({ className }) {
               </Link>
             </li>
             <li>
-              <Button className={cn('mt-4 mb-4', className)} asChild>
-                <Link href='/get-started'>
-                  Get started <ArrowBigRight />
-                </Link>
-              </Button>
+              <GetStartedButton
+                className={cn('mt-4 mb-4', className)}
+              />
             </li>
           </ul>
           <ul className={cn('flex gap-3 mt-8 mb-24', className)}>
