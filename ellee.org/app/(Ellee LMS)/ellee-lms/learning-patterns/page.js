@@ -7,20 +7,12 @@ import { H2, P, Section, Main, HR } from '@/components/HTMLTags';
 
 import Image from 'next/image';
 
-// make the mobile work with everything
-// Gradients and spotlight
-
-// Letter gradient
-// social media icons hover effect
-
-// finish adding button
-
 export default function LearningPatternsPage({ className }) {
   return (
     <Main>
       <PageHeader
         className={cn(
-          'flex flex-col-reverse md:flex-row md:items-center mb-12 md:mb-40 p-0'
+          'flex flex-col-reverse md:flex-row md:items-center mb-12 md:mb-20 p-0'
         )}
         mainTitle={'Learning Patterns'}
         subTitle={
@@ -37,17 +29,21 @@ export default function LearningPatternsPage({ className }) {
         />
       </PageHeader>
 
+      <HR className={cn('mb-20')} />
+
       <Section
         className={cn('flex flex-col md:flex-row mb-12 md:mb-20 p-0')}
       >
-        <Image
-          className={cn('mb-8 md:pr-10')}
-          src='/images/learning_patterns_2.png'
-          width={640}
-          height={602}
-          quality={100}
-          alt=''
-        />
+        <div>
+          <Image
+            className={cn('mb-8 md:pr-10')}
+            src='/images/learning_patterns_2.png'
+            width={640}
+            height={602}
+            quality={100}
+            alt=''
+          />
+        </div>
         <div className={cn('place-self-center pt-4')}>
           <H2>What is a Learning Pattern?</H2>
 

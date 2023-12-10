@@ -66,7 +66,7 @@ export function MobileMainMenu({ className }) {
             </li>
             <ul
               className={cn(
-                'grid w-[250px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ',
+                'grid w-[250px] gap-3 p-4 md:w-[300px] mainmenu:grid-cols-2 lg:w-[600px] ',
                 className
               )}
             >
@@ -93,7 +93,7 @@ export function MobileMainMenu({ className }) {
             </li>
             <ul
               className={cn(
-                'grid w-[250px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ',
+                'grid w-[250px] gap-3 p-4 md:w-[300px] mainmenu:grid-cols-2 lg:w-[600px] ',
                 className
               )}
             >

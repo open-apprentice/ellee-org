@@ -14,7 +14,7 @@ export const TwitterIcon = ({ className }) => {
         viewBox='0 0 24 24'
         role='img'
         className={cn(
-          'w-5 h-5 duration-300 ease-in-out fill-current transition-color hover:text-white',
+          'w-5 h-5 duration-300 ease-in-out fill-current transition-color',
           className
         )}
       >
@@ -36,7 +36,7 @@ export const LinkedInIcon = ({ className }) => {
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
         className={cn(
-          'w-5 h-5 duration-300 ease-in-out fill-current transition-color  hover:text-white ',
+          `w-5 h-5 duration-300 ease-in-out fill-current transition-color transition `,
           className
         )}
       >
