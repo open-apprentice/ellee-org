@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function CallToAction({ className }) {
   return (
     <div
-      className={cn('mx-auto text-center w-auto pt-20', className)}
+      className={cn('mx-auto text-center w-auto pt-20 ', className)}
     >
       <DisplayText>
         The needed next evolution in education is{' '}
