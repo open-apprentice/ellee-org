@@ -4,11 +4,11 @@ import { Button } from './ui/button';
 import { ArrowBigRight } from 'lucide-react';
 import Link from 'next/link';
 
-export function H1({ children, className }) {
+export function H1({ children, className, marginBottom = 'mb-2' }) {
   return (
     <h1
       className={cn(
-        'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-2',
+        `scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl ${marginBottom}`,
         className
       )}
     >
@@ -85,7 +85,7 @@ export function Main({ children, className }) {
   return (
     <main
       className={cn(
-        'container pt-12 md:pt-20 md:pb-20  items-center mx-auto max-w-screen-xl md:px-12 md:py-8 ',
+        'container pt-6 md:pt-20 md:pb-20  items-center mx-auto max-w-screen-xl md:px-12 md:py-8 ',
         className
       )}
     >
@@ -111,7 +111,7 @@ export function SpanGradient({ children, className }) {
   return (
     <span
       className={cn(
-        'text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-blue-600',
+        'text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-600 to-blue-600',
         className
       )}
     >

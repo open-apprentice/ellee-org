@@ -3,51 +3,76 @@ import { learningPatterns } from '@/data/data';
 import LearningPatternCard from '@/components/LearningPatternCard';
 import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
-import { H2, P, Section, Main } from '@/components/HTMLTags';
+import { H2, P, Section, Main, HR } from '@/components/HTMLTags';
 
-// Hero Image
+import Image from 'next/image';
+
+// make the mobile work with everything
 // Gradients and spotlight
-// Button Design and special effects
-// Call to Action Design add image or background
+
 // Letter gradient
-// corner card gradients
 // social media icons hover effect
 
 // finish adding button
-// create radial gradient https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
-// Craft the spotlight for the cards and other elements https://cruip.com/how-to-create-a-spotlight-card-hover-effect-with-tailwind-css/#create-a-reusable-spotlight-component-for-nextjs https://www.julienthibeaut.xyz/blog/create-modern-spotlight-effect-with-react-css
 
 export default function LearningPatternsPage({ className }) {
   return (
     <Main>
       <PageHeader
+        className={cn(
+          'flex flex-col-reverse md:flex-row md:items-center mb-12 md:mb-40 p-0'
+        )}
         mainTitle={'Learning Patterns'}
         subTitle={
-          'Over 50 individually unique Learning Patterns to help you teach your subject exactly as you would in real life. '
+          'Over 50 individually unique Learning Patterns to help you teach your subject at scale. And teach as you would in real life. '
         }
-      />
-      <Section>
-        <H2>What is a Learning Pattern?</H2>
+      >
+        <Image
+          className={cn('mb-8 md:pl-10')}
+          src='/images/learning_patterns.png'
+          width={640}
+          height={427}
+          quality={100}
+          alt=''
+        />
+      </PageHeader>
 
-        <P>
-          We can define a <strong>Learning Pattern</strong> as a
-          recognizable and repeatable series of actions that teachers,
-          educators, parents or anyone teaching another has the
-          learner to do. Ellee takes these patterns and makes them
-          available in composable content sections that anyone can use
-          to ensure students learn using the most successful teaching
-          practices.
-        </P>
+      <Section
+        className={cn('flex flex-col md:flex-row mb-12 md:mb-20 p-0')}
+      >
+        <Image
+          className={cn('mb-8 md:pr-10')}
+          src='/images/learning_patterns_2.png'
+          width={640}
+          height={602}
+          quality={100}
+          alt=''
+        />
+        <div className={cn('place-self-center pt-4')}>
+          <H2>What is a Learning Pattern?</H2>
+
+          <P>
+            We can define a <strong>Learning Pattern</strong> as a
+            recognizable and repeatable series of actions that
+            teachers, educators, parents or anyone teaching another
+            has the learner do. Ellee takes these patterns and makes
+            them available as composable content sections that anyone
+            can use to ensure students learn using the most successful
+            teaching practices.
+          </P>
+          <H2>A few (of many) Learning Patterns</H2>
+          <P>
+            Selected from over 50 different available components,
+            these patterns are common but often unrecognized. We
+            didn't invent most of these patterns. We observed top
+            teachers from all types of discplines, and copied them.
+          </P>
+        </div>
       </Section>
 
-      <Section>
-        <H2>A few (of many) Learning Patterns</H2>
-        <P>
-          Selected from over 50 different available components, these
-          show common and often unrecognized patterns. We didn't event
-          most of these patterns. We observed top teachers from all
-          types of discplines.
-        </P>
+      <HR className={cn('mb-20')} />
+
+      <Section className={cn('mb-20 md:mb-40 p-0')}>
         <div
           className={cn(
             'grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3',

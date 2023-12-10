@@ -5,15 +5,24 @@ export default function PageHeader({
   subTitle,
   mainTitle,
   className,
+  children,
 }) {
   return (
-    <section className={cn('container', className)}>
-      <div className={cn('', className)}>
-        <H1>{mainTitle}</H1>
-        <div className={cn('text-xl text-center mb-40', className)}>
+    <section className={cn('container flex mt-20', className)}>
+      <div>
+        <H1 marginBottom='text-center md:text-left mb-4'>
+          {mainTitle}
+        </H1>
+        <div
+          className={cn(
+            'text-xl text-center md:text-left',
+            className
+          )}
+        >
           <P>{subTitle}</P>
         </div>
       </div>
+      {children}
     </section>
   );
 }
