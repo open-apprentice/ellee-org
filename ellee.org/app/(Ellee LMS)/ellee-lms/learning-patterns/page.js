@@ -4,6 +4,7 @@ import LearningPatternCard from '@/components/LearningPatternCard';
 import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
 import { H2, P, Section, Main, HR } from '@/components/HTMLTags';
+import SectionHeading from '@/components/SectionHeading';
 
 import Image from 'next/image';
 
@@ -28,7 +29,6 @@ export default function LearningPatternsPage({ className }) {
           alt=''
         />
       </PageHeader>
-
       <HR className={cn('mb-20')} />
 
       <Section
@@ -56,17 +56,21 @@ export default function LearningPatternsPage({ className }) {
             can use to ensure students learn using the most successful
             teaching practices.
           </P>
-          <H2>A few (of many) Learning Patterns</H2>
+
           <P>
-            Selected from over 50 different available components,
-            these patterns are common but often unrecognized. We
-            didn't invent most of these patterns. We observed top
+            We didn't invent most of these patterns. We observed top
             teachers from all types of discplines, and copied them.
           </P>
         </div>
       </Section>
-
       <HR className={cn('mb-20')} />
+
+      <SectionHeading
+        title='A few (of many) Learning Patterns'
+        description='Selected from over 50 different available components,
+            these patterns are common but often unrecognized. '
+        label='Ellee LMS'
+      />
 
       <Section className={cn('mb-20 md:mb-40 p-0')}>
         <div

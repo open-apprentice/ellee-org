@@ -80,7 +80,7 @@ export const elleeLMS = [
 // 11    13 14 15    17 18    20
 // 21 22 23    25 26 27    29 30
 //    32    34 35 36    38 39 40
-// 41    43 44 45 46 47 48 49
+// 41    43 44 45 46 47  49
 // 51 52 53 54 55 56 57 58 59 60
 
 export const learningPatterns = [
@@ -191,5 +191,14 @@ export const learningPatterns = [
     summary:
       'Knowing which pieces go together and which pieces are disrelated ensure accurate and confident execution.',
     link: '/concept-associations',
+  },
+  {
+    number: 48,
+    title: 'Make a problem',
+    description:
+      'The student is asked to create a problem within the sphere of the topic or subject, and then using what they have learned, solve their problem. For example, a salesperson may dream up customer objections and then figure out themselves how to resolve them. Another example, a baker may dream up a missing ingredient and then figure out how to replace it. The key is to have the student repeat this until they feel comfortable posing as well as solving problems within the subject context.',
+    summary:
+      'Complete understanding of any topic involves being able to dream up problems within that subject and then solving them.',
+    link: '/make-a-problem',
   },
 ];
