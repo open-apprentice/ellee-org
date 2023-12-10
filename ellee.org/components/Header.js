@@ -19,10 +19,10 @@ export default function Header({ children, className }) {
         <div>
           <Logo />
         </div>
-        <div className={cn('hidden sm:block', className)}>
+        <div className={cn('hidden mainmenu:block', className)}>
           <MainMenu />
         </div>
-        <div className={cn('hidden sm:block', className)}>
+        <div className={cn('hidden mainmenu:block', className)}>
           <ul className={cn('flex gap-4 items-center', className)}>
             <SocialMediaIcons />
             <li>
@@ -30,7 +30,7 @@ export default function Header({ children, className }) {
             </li>
           </ul>
         </div>
-        <div className={cn('flex sm:hidden', className)}>
+        <div className={cn('flex mainmenu:hidden', className)}>
           <MobileMainMenu />
         </div>
         {children}

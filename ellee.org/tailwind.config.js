@@ -80,6 +80,9 @@ module.exports = {
         'gradient-radial':
           'radial-gradient(var(--tw-gradient-stops))',
       },
+      screens: {
+        mainmenu: '870px',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
