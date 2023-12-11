@@ -6,6 +6,7 @@ import { cn } from '../lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ShoutOut from '@/components/ShoutOut';
 
 export const metadata = {
   title: 'Ellee.org | A modern LMS for the blockchain age',
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang='en' suppressHydrationWarning>
       <body
         className={`${cn(
-          'min-h-screen bg-background font-sans antialiased'
+          "min-h-screen bg-background font-sans antialiased bg-[url('/images/white-background.png')] dark:bg-[url('/images/black-background.png')] bg-cover bg-no-repeat"
         )} ${roboto.variable} ${inter.variable}`}
       >
         <ThemeProvider
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
+          <ShoutOut />
           <Header />
 
           {children}
