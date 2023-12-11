@@ -12,7 +12,7 @@ export default function Header({ children, className }) {
     <header>
       <div
         className={cn(
-          'flex w-full flex-row justify-between pt-4 md:pt-0 px-8 lg:px-8 items-center mx-auto max-w-screen-xl',
+          'flex w-full flex-row justify-between pt-4 md:pt-0 md:pb-1 px-8 lg:px-8 items-center mx-auto max-w-screen-xl mainmenu:border-b',
           className
         )}
       >

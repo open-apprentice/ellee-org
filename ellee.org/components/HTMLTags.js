@@ -111,7 +111,7 @@ export function SpanGradient({ children, className }) {
   return (
     <span
       className={cn(
-        'text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-600 to-blue-600',
+        'text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-600 to-blue-600 ',
         className
       )}
     >
@@ -122,7 +122,7 @@ export function SpanGradient({ children, className }) {
 
 export function GetStartedButton({ className }) {
   return (
-    <Button asChild>
+    <Button className={cn('flex ml-4 w-32', className)} asChild>
       <Link className={cn('group', className)} href='/get-started'>
         Get started{' '}
         <ArrowBigRight

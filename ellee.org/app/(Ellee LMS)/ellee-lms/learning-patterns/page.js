@@ -5,15 +5,12 @@ import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
 import { H2, P, Section, Main, HR } from '@/components/HTMLTags';
 import SectionHeading from '@/components/SectionHeading';
+import CenteredText from '@/components/CenteredText';
 
 import Image from 'next/image';
 
-// add above menu shoutout
-// add text sentence under the main hero section.
-// add three bullets in main hero section, maybe a button
 // add two more learning patterns
 // determine and fix vertical padding and margins
-// and background for sections or at least some
 
 export default function LearningPatternsPage({ className }) {
   return (
@@ -27,6 +24,7 @@ export default function LearningPatternsPage({ className }) {
           'Over 50 individually unique Learning Patterns to help you teach your subject at scale. And teach as you would in real life. '
         }
       >
+        {' '}
         <Image
           className={cn('mb-8 md:pl-10')}
           src='/images/learning_patterns.png'
@@ -36,6 +34,11 @@ export default function LearningPatternsPage({ className }) {
           alt=''
         />
       </PageHeader>
+      <CenteredText>
+        Learning Patterns work for any subject as they follow natural
+        tendencies that work.
+      </CenteredText>
+
       <HR className={cn('mb-20')} />
 
       <Section

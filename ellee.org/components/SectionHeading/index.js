@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
-import { H2, P, SpanGradient } from '@/components/HTMLTags';
+import { H2, P } from '@/components/HTMLTags';
+import TagLabel from '@/components/TagLabel';
 
 export default function SectionHeading({
   label,
@@ -15,13 +16,8 @@ export default function SectionHeading({
       )}
     >
       <div>
-        <P>
-          <SpanGradient
-            className={cn(' border rounded-lg p-2', className)}
-          >
-            {label}
-          </SpanGradient>
-        </P>
+        <TagLabel label={label} />
+
         <H2 className={cn('border-0 pb-0', className)}>{title}</H2>
         <P
           className={cn(
