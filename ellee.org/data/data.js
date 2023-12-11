@@ -76,12 +76,12 @@ export const elleeLMS = [
   },
 ];
 
-// 1  2  3  4     6  7  8     10
+// 1  2     4     6  7  8     10
 // 11    13 14 15    17 18    20
 // 21 22 23    25 26 27    29 30
 //    32    34 35 36    38 39 40
-// 41    43 44 45 46 47  49
-// 51 52 53 54 55 56 57 58 59 60
+// 41    43 44 45 46 47    49
+// 51   53 54 55 56 57 58 59 60
 
 export const learningPatterns = [
   {
@@ -200,5 +200,23 @@ export const learningPatterns = [
     summary:
       'Complete understanding of any topic involves being able to dream up problems within that subject and then solving them.',
     link: '/make-a-problem',
+  },
+  {
+    number: 3,
+    title: 'Good judgement',
+    description:
+      'The instructor provides two more relatively complex scenarios and possible actions (or responses) regarding the section just studied. The learner reviews each of the scenarios and possibilities. The learner must determine which of the provided scenarios is the best course of action and what is the expected outcome of each of the provided scenarios. In this way, the instructor gives real scenarios that the student can learn from and develop more judgement.',
+    summary:
+      'An individual has to develop judgement through actual experience and learning how to think about the subject.',
+    link: '/good-judgement',
+  },
+  {
+    number: 52,
+    title: 'Break it into parts',
+    description:
+      'The student is given a seemingly complex task or situation. They are ask to first, isolate each of the parts that comprise the task. Afterwards, the second step is to analyse more closely each step and determine when in relation to the other parts it should get resolved. For example, the task of putting together a pile of motor parts. The student would isolate each of the parts as individual pieces and then start organizing them. Another example, is what individuals often do with puzzles. They may focus on borders first and then color groups or textures.',
+    summary:
+      'Problems and confusions, no matter how large, can be resolved by looking at each of the parts individually.',
+    link: '/break-it-into-parts',
   },
 ];
