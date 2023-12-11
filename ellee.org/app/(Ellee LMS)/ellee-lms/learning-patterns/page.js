@@ -8,6 +8,13 @@ import SectionHeading from '@/components/SectionHeading';
 
 import Image from 'next/image';
 
+// add above menu shoutout
+// add text sentence under the main hero section.
+// add three bullets in main hero section, maybe a button
+// add two more learning patterns
+// determine and fix vertical padding and margins
+// and background for sections or at least some
+
 export default function LearningPatternsPage({ className }) {
   return (
     <Main>
