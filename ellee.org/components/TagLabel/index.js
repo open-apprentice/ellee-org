@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { P, SpanGradient } from '@/components/HTMLTags';
 
-export default function TagLabel({ label = 'Labal', className }) {
+export default function TagLabel({ label = 'Label', className }) {
   return (
     <P>
       <SpanGradient

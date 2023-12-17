@@ -135,3 +135,17 @@ export function GetStartedButton({ className }) {
     </Button>
   );
 }
+
+export function ArrowLink({ className, children, href }) {
+  return (
+    <Link className={cn('group flex w-32', className)} href={href}>
+      {children}{' '}
+      <ArrowBigRight
+        className={cn(
+          'z-40 ml-1 -mr-1  transition-all duration-300 group-hover:translate-x-1',
+          className
+        )}
+      />
+    </Link>
+  );
+}

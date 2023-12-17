@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { learningPatterns } from '@/data/data';
+import { learningPatterns } from './data';
 import LearningPatternCard from '@/components/LearningPatternCard';
 import PageHeader from '@/components/PageHeader';
 import CallToAction from '@/components/(Call to actions)/CallToAction';
@@ -8,9 +8,6 @@ import SectionHeading from '@/components/SectionHeading';
 import CenteredText from '@/components/CenteredText';
 
 import Image from 'next/image';
-
-// add two more learning patterns
-// determine and fix vertical padding and margins
 
 export default function LearningPatternsPage({ className }) {
   return (
@@ -26,7 +23,6 @@ export default function LearningPatternsPage({ className }) {
       >
         {' '}
         <Image
-          className={cn('mb-8 md:pl-10')}
           src='/images/learning_patterns.png'
           width={640}
           height={427}
@@ -34,12 +30,11 @@ export default function LearningPatternsPage({ className }) {
           alt=''
         />
       </PageHeader>
-      <CenteredText>
+
+      <CenteredText className={cn('mb-12 md:mb-10')}>
         Learning Patterns work for any subject as they follow natural
         tendencies that work.
       </CenteredText>
-
-      <HR className={cn('mb-20')} />
 
       <Section
         className={cn('flex flex-col md:flex-row mb-12 md:mb-20 p-0')}

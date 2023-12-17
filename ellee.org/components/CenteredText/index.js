@@ -11,7 +11,7 @@ export default function CenteredText({ className, children }) {
     >
       <P
         className={cn(
-          '[&:not(:first-child)]:mt-0 max-w-4xl mb-0 text-neutral-500',
+          '[&:not(:first-child)]:mt-0 max-w-4xl mb-0 text-neutral-500 text-center',
           className
         )}
       >

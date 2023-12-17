@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 
-export default function Home({ className }) {
+export default function AdaptiveContent({ className }) {
   return (
     <main
       className={cn(
