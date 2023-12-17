@@ -13,9 +13,7 @@ import {
 } from '@/components/CardWithBullets';
 import Image from 'next/image';
 
-// spacing and element consistency eg hr and padding moile etc
-// install https://socket.dev/ and move ellee.org to the Org on GitHub, https://docs.socket.dev/docs/socket-npm-socket-npx
-//
+// spacing and element consistency eg hr and padding mobile etc
 
 export default function GeneralFeaturesPage({ className }) {
   return (
@@ -60,7 +58,7 @@ export default function GeneralFeaturesPage({ className }) {
           {features.map((feature) => {
             return (
               <CardWithBullets
-                id={feature.id}
+                key={feature.id}
                 label={feature.label}
                 title={feature.title}
                 subtitle={feature.subtitle}

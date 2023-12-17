@@ -30,12 +30,10 @@ export default function LearningPatternsPage({ className }) {
           alt=''
         />
       </PageHeader>
-
       <CenteredText className={cn('mb-12 md:mb-10')}>
         Learning Patterns work for any subject as they follow natural
         tendencies that work.
       </CenteredText>
-
       <Section
         className={cn('flex flex-col md:flex-row mb-12 md:mb-20 p-0')}
       >
@@ -69,7 +67,6 @@ export default function LearningPatternsPage({ className }) {
         </div>
       </Section>
       <HR className={cn('mb-20')} />
-
       <SectionHeading
         title='A few (of many) Learning Patterns'
         description='Selected from over 50 different available components,
