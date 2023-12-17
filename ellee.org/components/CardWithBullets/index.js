@@ -18,11 +18,11 @@ import {
 } from '@/components/ui/card';
 
 export function CardWithBullets(
-  { label, title, subtitle, bulletPoints, link, id },
+  { label, title, subtitle, bulletPoints, link, key },
   className
 ) {
   return (
-    <li key={id}>
+    <li key={key}>
       {label ? <TagLabel label={label} /> : ''}
       <Card
         className={cn(
