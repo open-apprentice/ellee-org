@@ -4,7 +4,7 @@ import * as React from 'react';
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
-import { useCases, elleeLMS } from '../../data/data';
+import { useCases, elleeLMS } from './data';
 import { Logo } from '../Logo';
 import { SocialMediaIcons } from '@/data/SocialIcons';
 import { ModeToggle } from '@/components/ModeToggle';
@@ -15,7 +15,7 @@ import ListItem from './ListItem';
 import { Button } from '../ui/button';
 import { Separator } from '@/components/ui/separator';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { ArrowBigRight } from 'lucide-react';
+import Image from 'next/image';
 
 import {
   Sheet,
@@ -112,7 +112,14 @@ export function MobileMainMenu({ className }) {
                     )}
                   >
                     <span className={cn('pt-1 ', className)}>
-                      {elleeLMS[0].icon}
+                      <Image
+                        className={cn('')}
+                        src={elleeLMS[0].icon}
+                        width={40}
+                        height={40}
+                        quality={80}
+                        alt=''
+                      />
                     </span>
                     <span className={cn('pl-2 ', className)}>
                       {elleeLMS[0].title}

@@ -3,9 +3,9 @@
 import * as React from 'react';
 import Link from 'next/link';
 import ListItem from './ListItem';
-import { useCases, elleeLMS } from '@/data/data';
+import { useCases, elleeLMS } from './data';
 import { GetStartedButton } from '@/components/HTMLTags';
-
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 import {
@@ -73,12 +73,19 @@ export default function MainMenu({ className }) {
                   >
                     <div
                       className={cn(
-                        'mb-2 mt-4 text-lg font-medium',
+                        'mb-2 mt-2 text-lg font-medium',
                         className
                       )}
                     >
                       <span className={cn('pt-1 ', className)}>
-                        {elleeLMS[0].icon}
+                        <Image
+                          className={cn('')}
+                          src={elleeLMS[0].icon}
+                          width={40}
+                          height={40}
+                          quality={80}
+                          alt=''
+                        />
                       </span>
                       <span className={cn('pl-0 ', className)}>
                         {elleeLMS[0].title}

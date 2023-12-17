@@ -1,5 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const ListItem = React.forwardRef(
   ({ className, title, icon, children, ...props }, ref) => {
@@ -19,7 +20,15 @@ const ListItem = React.forwardRef(
               className
             )}
           >
-            {icon}
+            <Image
+              className={cn('-ml-3')}
+              src={icon}
+              width={34}
+              height={34}
+              quality={80}
+              alt=''
+            />
+
             <span className={cn('pl-2', className)}>{title}</span>
           </div>
           <p
@@ -30,7 +39,7 @@ const ListItem = React.forwardRef(
           >
             {children}
           </p>
-        </a>
+        </a>{' '}
       </li>
     );
   }
