@@ -13,7 +13,7 @@ export const Logo = ({
   className,
 }) => {
   return (
-    <Link href='/'>
+    <Link className={cn('', className)} href='/'>
       <Image
         priority
         src={darkLogo}

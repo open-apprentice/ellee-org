@@ -8,7 +8,7 @@ export default function PageHeader({
   children,
 }) {
   return (
-    <section className={cn('container flex mt-20', className)}>
+    <section className={cn('container flex mb-2', className)}>
       <div>
         <H1 marginBottom='text-center md:text-left mb-4'>
           {mainTitle}

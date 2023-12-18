@@ -19,7 +19,7 @@ export default function LearningPatternCard(
   return (
     <Card
       className={cn(
-        'md:w-full xl:w-[350px] bg-gradient-to-tr from-zinc-100 via-zinc-50 to-[#ffffff] dark:from-zinc-800 dark:via-zinc-900 dark:to-[#0a0a0a]  ',
+        'md:w-full xl:w-[350px] bg-gradient-to-tr from-zinc-100 via-zinc-50 to-[#ffffff] dark:from-zinc-800 dark:via-zinc-900 dark:to-[#0a0a0a] md:mb-5 ',
         className
       )}
     >

@@ -22,11 +22,11 @@ export function CardWithBullets(
   className
 ) {
   return (
-    <li key={key}>
+    <li key={key} className={cn('mb-5', className)}>
       {label ? <TagLabel label={label} /> : ''}
       <Card
         className={cn(
-          'md:w-full xl:w-[350px] bg-gradient-to-tr from-zinc-100 via-zinc-50 to-[#ffffff] dark:from-zinc-800 dark:via-zinc-900 dark:to-[#0a0a0a]  ',
+          'md:w-full xl:w-[350px] bg-gradient-to-tr from-zinc-100 via-zinc-50 to-[#ffffff] dark:from-zinc-800 dark:via-zinc-900 dark:to-[#0a0a0a] h-[350px] sm:h-[280px] md:h-[420px] lg:h-[480px] xl:h-[360px]',
           className
         )}
       >
