@@ -69,13 +69,28 @@ export function P({ children, className }) {
   );
 }
 
-export function HR({ className }) {
-  return <Separator className={cn('my-4 md:my-8)', className)} />;
+export function HR({
+  className,
+  mt = '1',
+  mb = '1',
+  mdmt = '1',
+  mdmb = '1',
+}) {
+  return (
+    <Separator
+      className={cn(
+        `mt-${mt} mb-${mb} md:mt-${mdmt} md:mb-${mdmb} bg-gradient-to-r
+        from-white via-zinc-500 to-white
+        dark:from-black dark:via-neutral-600 dark:to-black `,
+        className
+      )}
+    />
+  );
 }
 
 export function Section({ children, className }) {
   return (
-    <section className={cn('container mx-auto mb-16', className)}>
+    <section className={cn('container mx-auto', className)}>
       {children}
     </section>
   );
@@ -85,7 +100,7 @@ export function Main({ children, className }) {
   return (
     <main
       className={cn(
-        'container pt-6 md:pt-20 md:pb-20  items-center mx-auto max-w-screen-xl md:px-12 md:py-8 ',
+        '  items-center mx-auto max-w-screen-xl md:px-12 ',
         className
       )}
     >

@@ -16,7 +16,7 @@ export default function CallToAction({ className }) {
     >
       <DisplayText>
         The needed next evolution in education is{' '}
-        <SpanGradient>now a reality.</SpanGradient>
+        <SpanGradient>coming soon.</SpanGradient>
       </DisplayText>
       <div
         className={cn(

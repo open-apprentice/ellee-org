@@ -14,7 +14,7 @@ export default function SectionHeading({
     <>
       <section
         className={cn(
-          'flex align-middle text-center justify-center mt-20 mb-10',
+          'container flex align-middle text-center justify-center mb-10',
           className
         )}
       >

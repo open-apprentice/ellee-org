@@ -13,14 +13,14 @@ import {
 } from '@/components/CardWithBullets';
 import Image from 'next/image';
 
-// spacing and element consistency eg hr and padding mobile etc
+// collect emails in call to action instead.
 
 export default function GeneralFeaturesPage({ className }) {
   return (
     <Main>
       <PageHeader
         className={cn(
-          'flex flex-col-reverse md:flex-row md:items-center mb-10 md:mb-10 p-0'
+          'flex flex-col-reverse md:flex-row md:items-center'
         )}
         mainTitle={'General Features'}
         subTitle={
@@ -38,8 +38,9 @@ export default function GeneralFeaturesPage({ className }) {
       </PageHeader>
 
       <CenteredText className={cn('mb-10')}>
-        Don't pay extra for basic features. You can only deliver a
-        great teaching experience if you have what you need.
+        <strong>Don't pay extra for basic features.</strong> You can
+        only deliver a great teaching experience if you have what you
+        need.
       </CenteredText>
 
       <SectionHeading
@@ -48,10 +49,10 @@ export default function GeneralFeaturesPage({ className }) {
         label='Ellee LMS Features'
       />
 
-      <Section className={cn('mb-20 md:mb-40 p-0')}>
+      <Section className={cn('mb-10')}>
         <ul
           className={cn(
-            'grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3',
+            'grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-10',
             className
           )}
         >
@@ -72,7 +73,7 @@ export default function GeneralFeaturesPage({ className }) {
 
       {/* accessible, integration, open source, private/public */}
 
-      <Section className='flex border rounded-lg bg-gradient-to-tr from-zinc-100 via-zinc-50 to-[#ffffff] dark:from-zinc-800 dark:via-zinc-900 dark:to-[#0a0a0a]'>
+      <Section className='flex mb-10'>
         <div className='hidden lg:flex items-center justify-center flex-1'>
           <div className='max-w-md text-center'>
             <Image
@@ -86,7 +87,7 @@ export default function GeneralFeaturesPage({ className }) {
         </div>
 
         <div className='w-full bg-gray-10 lg:w-1/2 flex items-center justify-center'>
-          <div className='max-w-md w-full p-6'>
+          <div className='max-w-md w-full'>
             <div className='text-neutral-500'>
               <SingleCardWithBullets
                 label={'Built in features'}
@@ -106,16 +107,15 @@ export default function GeneralFeaturesPage({ className }) {
         </div>
       </Section>
 
-      <HR className={cn('mb-20')} />
-
       <SectionHeading
+        className={cn('mb-10')}
         title='Ellee is OpenSource under GPL v.3'
         description='We believe being open source is a feature. We allow the hard work to be available to anyone. Our core mission includes democratizing education. We believe having an open code base that anyone can inspect is part of gaining adoption and usage. Anyone is free to use Ellee to teach any subject without limits privately or commerically.'
         subsection='However, individuals may not package or wrap Ellee as a service unless they are closely following the guidelines contained in the GPL v.3 license.'
         label='OpenSource as a feature'
       />
 
-      <HR className={cn('mb-20 mt-20')} />
+      <HR className={cn('mt-10')} />
 
       <Section>
         <CallToAction />

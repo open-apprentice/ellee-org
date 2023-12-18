@@ -6,6 +6,7 @@ import CallToAction from '@/components/(Call to actions)/CallToAction';
 import { H2, P, Section, Main, HR } from '@/components/HTMLTags';
 import SectionHeading from '@/components/SectionHeading';
 import CenteredText from '@/components/CenteredText';
+import TagLabel from '@/components/TagLabel';
 
 import Image from 'next/image';
 
@@ -14,7 +15,7 @@ export default function LearningPatternsPage({ className }) {
     <Main>
       <PageHeader
         className={cn(
-          'flex flex-col-reverse md:flex-row md:items-center mb-12 md:mb-20 p-0'
+          'flex flex-col-reverse md:flex-row md:items-center mb-5 md:mb-10'
         )}
         mainTitle={'Learning Patterns'}
         subTitle={
@@ -30,16 +31,22 @@ export default function LearningPatternsPage({ className }) {
           alt=''
         />
       </PageHeader>
-      <CenteredText className={cn('mb-12 md:mb-10')}>
+
+      <CenteredText className={cn('mb-10 md:mb-10')}>
         Learning Patterns work for any subject as they follow natural
         tendencies that work.
       </CenteredText>
+
+      <div className={cn('flex justify-center ', className)}>
+        <TagLabel label='Learning Patterns' />
+      </div>
+
       <Section
-        className={cn('flex flex-col md:flex-row mb-12 md:mb-20 p-0')}
+        className={cn('flex flex-col md:flex-row mb-5 md:mb-10')}
       >
-        <div>
+        <div className={cn('pb-5 md:pb-10')}>
           <Image
-            className={cn('mb-8 md:pr-10')}
+            className={cn('md:pr-10')}
             src='/images/learning_patterns_2.png'
             width={640}
             height={602}
@@ -47,7 +54,8 @@ export default function LearningPatternsPage({ className }) {
             alt=''
           />
         </div>
-        <div className={cn('place-self-center pt-4')}>
+
+        <div className={cn('place-self-center md:pb-10')}>
           <H2>What is a Learning Pattern?</H2>
 
           <P>
@@ -66,7 +74,9 @@ export default function LearningPatternsPage({ className }) {
           </P>
         </div>
       </Section>
-      <HR className={cn('mb-20')} />
+
+      <HR className={cn('mb-10 md:mb-20')} />
+
       <SectionHeading
         title='A few (of many) Learning Patterns'
         description='Selected from over 50 different available components,
@@ -74,7 +84,7 @@ export default function LearningPatternsPage({ className }) {
         label='Ellee LMS'
       />
 
-      <Section className={cn('mb-20 md:mb-40 p-0')}>
+      <Section className={cn('mb-10 md:mb-20 ')}>
         <div
           className={cn(
             'grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3',
@@ -93,6 +103,9 @@ export default function LearningPatternsPage({ className }) {
           ))}
         </div>
       </Section>
+
+      <HR />
+
       <Section>
         <CallToAction />
       </Section>
