@@ -21,11 +21,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html
+      lang='en'
+      suppressHydrationWarning
+      className={`${roboto.variable} ${inter.variable}`}
+    >
       <body
-        className={`${cn(
+        className={cn(
           "min-h-screen bg-background font-sans antialiased bg-[url('/images/white-background.png')] dark:bg-[url('/images/black-background.png')] bg-cover bg-no-repeat"
-        )} ${roboto.variable} ${inter.variable}`}
+        )}
       >
         <ThemeProvider
           attribute='class'

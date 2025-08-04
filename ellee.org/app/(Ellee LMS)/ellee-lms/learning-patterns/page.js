@@ -27,7 +27,7 @@ export default function LearningPatternsPage({ className }) {
           src='/images/learning_patterns.png'
           width={640}
           height={427}
-          quality={100}
+          quality={80}
           alt=''
         />
       </PageHeader>
@@ -50,7 +50,7 @@ export default function LearningPatternsPage({ className }) {
             src='/images/learning_patterns_2.png'
             width={640}
             height={602}
-            quality={100}
+            quality={80}
             alt=''
           />
         </div>
