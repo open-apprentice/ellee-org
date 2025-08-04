@@ -9,6 +9,7 @@ export default function SectionHeading({
   subsection = '',
   title,
   className,
+  children,
 }) {
   return (
     <>
@@ -30,6 +31,7 @@ export default function SectionHeading({
           >
             {description}
           </P>
+          {children}
         </div>
       </section>
       {subsection ? <CenteredText>{subsection}</CenteredText> : ''}

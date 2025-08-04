@@ -13,8 +13,6 @@ import {
 } from '@/components/CardWithBullets';
 import Image from 'next/image';
 
-// collect emails in call to action instead.
-
 export default function GeneralFeaturesPage({ className }) {
   return (
     <Main>
@@ -32,7 +30,7 @@ export default function GeneralFeaturesPage({ className }) {
           src='/images/general-features.png'
           width={640}
           height={427}
-          quality={100}
+          quality={80}
           alt=''
         />
       </PageHeader>
@@ -80,7 +78,7 @@ export default function GeneralFeaturesPage({ className }) {
               src='/images/general-features-2.png'
               width={640}
               height={427}
-              quality={100}
+              quality={80}
               alt=''
             />
           </div>

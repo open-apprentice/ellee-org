@@ -164,3 +164,9 @@ export function ArrowLink({ className, children, href }) {
     </Link>
   );
 }
+
+export function LI({ children, className }) {
+  return (
+    <li className={cn('list-disc pb-4', className)}>{children}</li>
+  );
+}
